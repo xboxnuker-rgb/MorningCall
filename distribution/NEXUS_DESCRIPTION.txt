@@ -1,0 +1,63 @@
+[center][size=6][b]Morning Call[/b][/size]
+A small multiplayer sleep helper for Project Zomboid Build 42.21[/center]
+
+[b]What it does[/b]
+
+[list]
+[*]Shows a persistent sleeping-player banner, for example: [code]Sleeping 1/3: Alice[/code]
+[*]Counts connected, living, non-ghost players automatically
+[*]Wakes sleeping online players at 05:30 each in-game day
+[*]Displays a six-second morning notification for everyone
+[*]Plays a rooster-crow alert on each connected client
+[*]Leaves fatigue, sleep duration, and time acceleration to the vanilla game
+[*]Is designed to coexist with MP Fast Forward
+[/list]
+
+[b]Requirements[/b]
+
+[list]
+[*]Project Zomboid Build 42.21.x
+[*]The same Morning Call version installed for the server and every player
+[*]No other mods or frameworks are required
+[/list]
+
+[b]Manual installation — Steam or GOG[/b]
+
+[list=1]
+[*]Download and extract [code]MorningCall-B42.21.zip[/code].
+[*]Copy the resulting [code]MorningCall[/code] folder into [code]%UserProfile%\Zomboid\mods\[/code].
+[*]Confirm the final path is [code]%UserProfile%\Zomboid\mods\MorningCall\42\mod.info[/code].
+[*]Enable Morning Call in the game's Mods screen.
+[*]Restart Project Zomboid.
+[/list]
+
+[b]Multiplayer server[/b]
+
+Add [code]MorningCall[/code] to the server's [code]Mods=[/code] list. When installing this Nexus/manual package, do not add a Morning Call entry to [code]WorkshopItems=[/code]. Stop the server before replacing files, install the same version for all players, and then restart it.
+
+[b]Compatibility[/b]
+
+[list]
+[*]Existing saves: supported; no world or character data is stored
+[*]MP Fast Forward: designed to coexist
+[*]Dependencies: none
+[*]Configuration: fixed 05:30 behaviour by design
+[/list]
+
+[b]Current testing status[/b]
+
+The banner, state synchronization, scheduled waking, and morning message have been exercised in private multiplayer play. Version 1.0.1 revises rooster playback to use the local player's sound emitter; complete one final audio check before describing the release as fully tested.
+
+[b]Credits[/b]
+
+Rooster Crow 02 from SFXMint's animal-call set.
+Source: https://sfxmint.com/sets/animal-calls
+License: CC0 1.0 Universal
+
+[b]AI disclosure[/b]
+
+The mod was developed with substantial assistance from OpenAI Codex. The promotional thumbnail was generated using OpenAI image generation. Apply the Nexus [b]AI-Generated Content[/b] and [b]AI Media[/b] tags to this listing.
+
+Mod ID: [code]MorningCall[/code]
+Version: [code]1.0.1[/code]
+

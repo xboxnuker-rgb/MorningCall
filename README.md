@@ -2,6 +2,21 @@
 
 Morning Call is a deliberately small multiplayer sleep helper for Project Zomboid Build 42.21. It was built for a three-player co-op server and stays out of the game's time-speed logic.
 
+![Morning Call preview](workshop/MorningCall/preview.png)
+
+## Download and quick start
+
+The player-ready archive is `MorningCall-B42.21.zip` on the project's Releases page. Steam and GOG players can both use the manual package:
+
+1. Download and extract the archive.
+2. Copy the extracted `MorningCall` folder into `%UserProfile%\Zomboid\mods\`.
+3. Confirm that `%UserProfile%\Zomboid\mods\MorningCall\42\mod.info` exists.
+4. Enable `Morning Call` in the game's Mods screen.
+5. For multiplayer, add `MorningCall` to the server's `Mods=` list and install the same version for every player.
+6. Restart the game and server.
+
+No save reset is required. Stop the server before replacing an installed version.
+
 ## What it does
 
 - Shows a persistent top-centre status banner whenever at least one eligible player is asleep, for example `Sleeping 1/3: Alice`.
@@ -24,6 +39,7 @@ Morning Call is a deliberately small multiplayer sleep helper for Project Zomboi
 | Existing saves | Safe; the mod stores no world or character data |
 | MP Fast Forward | Designed to coexist; Morning Call never writes the speed multiplier |
 | Workshop dependencies | None |
+| GOG edition | Supported through manual installation |
 
 The mod is intentionally fixed at 05:30 and has no sandbox settings, keybinds, saved data, or public API.
 
@@ -65,6 +81,48 @@ The manual ZIP remains useful as a fallback:
 4. Add `MorningCall` to the server's `Mods=` list.
 5. Leave `WorkshopItems=` unchanged for this manually distributed version.
 6. Install the same version for the host and every joining player, then restart the game and server.
+
+This is the recommended installation method for GOG players. A manually distributed server should use `Mods=MorningCall` without adding Morning Call to `WorkshopItems=`.
+
+## Distribution channels
+
+| Channel | GOG compatible | Updates | Best use |
+| --- | --- | --- | --- |
+| GitHub Releases | Yes | Manual download | Canonical project home and a small private group |
+| Steam Workshop | Steam clients | Automatic subscription updates | Largest PZ audience and Steam-hosted servers |
+| Nexus Mods | Yes, primarily manual installation | Nexus/Vortex update notifications | Public non-Steam mirror |
+| ModDB | Yes, manual installation | Manual download | Optional secondary public mirror |
+
+### GitHub Releases
+
+GitHub Releases is the best primary home for this project because it keeps the source, README, version history, release notes, ZIP, and checksum together without requiring Project Zomboid to be owned on Steam.
+
+Recommended release details:
+
+- Tag: `v1.0.1-b42.21`
+- Title: `Morning Call 1.0.1 for Project Zomboid Build 42.21`
+- Asset: `MorningCall-B42.21.zip`
+- Notes: `distribution/GITHUB_RELEASE_v1.0.1.md`
+
+### Nexus Mods
+
+Project Zomboid has an active Nexus Mods section, although the PZ community is much larger on Steam Workshop. Upload the same `MorningCall-B42.21.zip` as a **Main File** in the Project Zomboid game section and use `distribution/NEXUS_DESCRIPTION.txt` as the page description.
+
+Suggested listing details:
+
+- Category: `Gameplay` or `Miscellaneous`
+- Version: `1.0.1`
+- Game version: Build `42.21.x`
+- Required files: None
+- Installation: Manual installation instructions from this README
+- Relevant labels: multiplayer, interface, quality of life, Build 42
+- AI disclosure tags: `AI-Generated Content` and `AI Media`
+
+Nexus requires hosted files to be intended for public sharing, so it should not be used merely as private storage for a few friends. The promotional thumbnail was generated with an AI image tool and the mod was developed with substantial AI coding assistance; both must be disclosed accurately on the Nexus listing. Nexus currently lists Project Zomboid in Vortex's supported games, but Morning Call's Vortex installation has not been verified, so manual installation remains the documented path.
+
+### ModDB
+
+ModDB also has a Project Zomboid section and accepts manual mod archives. It is a reasonable mirror but offers less value here than GitHub Releases plus Nexus, so maintaining it is optional.
 
 ## Publishing the first Workshop version
 
@@ -124,8 +182,12 @@ MorningCall/
 |-- CHANGELOG.md
 |-- assets/
 |   `-- MorningCall-preview-source.png
+|-- distribution/
+|   |-- GITHUB_RELEASE_v1.0.1.md
+|   `-- NEXUS_DESCRIPTION.txt
 |-- release/
-|   `-- MorningCall-B42.21.zip
+|   |-- MorningCall-B42.21.zip
+|   `-- SHA256SUMS.txt
 |-- src/
 |   `-- MorningCall/                 # Canonical mod source
 |-- tools/
@@ -139,6 +201,7 @@ The build script copies the canonical source into:
 - `workshop/MorningCall/Contents/mods/MorningCall` for repository inspection.
 - `%UserProfile%\Zomboid\Workshop\MorningCall` for the in-game uploader.
 - `release/MorningCall-B42.21.zip` for manual distribution.
+- `release/SHA256SUMS.txt` for download verification.
 
 It does not edit the live server INI and does not upload anything to Steam.
 
@@ -180,6 +243,8 @@ Test with the server stopped before changing installed files.
 - [ ] MP Fast Forward still returns the game to normal speed after waking.
 - [ ] `console.txt` contains no Morning Call Lua, sound, or networking errors.
 - [ ] A client with the manual copy removed can download and run only the Workshop version.
+
+Current release status: the banner, state synchronization, 05:30 wake-up, and morning message were exercised in private multiplayer play. Version 1.0.1 includes a revised local-emitter sound call; verify the rooster once more before marking a public Nexus release as fully tested.
 
 Useful log file:
 
@@ -227,3 +292,9 @@ Rooster audio: **Rooster Crow 02** from SFXMint's animal-call set.
 
 The generated Workshop artwork is an original Morning Call thumbnail and contains no Project Zomboid logos or game assets.
 
+## Development and licensing notes
+
+- The mod was developed with substantial assistance from OpenAI Codex.
+- The promotional thumbnail was generated using OpenAI image generation.
+- The rooster audio is independently licensed under CC0 as detailed above.
+- No open-source licence has been selected for the Morning Call source code. If this repository is made public, normal copyright restrictions apply unless the maintainer adds a licence.

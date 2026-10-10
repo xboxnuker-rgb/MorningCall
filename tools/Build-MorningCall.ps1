@@ -16,6 +16,7 @@ $repoWorkshopTxt = Join-Path $repoItem 'workshop.txt'
 $userWorkshopTxt = Join-Path $userItem 'workshop.txt'
 $releaseDirectory = Join-Path $projectRoot 'release'
 $releaseZip = Join-Path $releaseDirectory 'MorningCall-B42.21.zip'
+$checksumFile = Join-Path $releaseDirectory 'SHA256SUMS.txt'
 
 function Assert-ManagedPath {
     param(
@@ -92,7 +93,10 @@ if (Test-Path -LiteralPath $releaseZip) {
     Remove-Item -LiteralPath $releaseZip -Force
 }
 Compress-Archive -LiteralPath $sourceMod -DestinationPath $releaseZip -CompressionLevel Optimal
+$releaseHash = (Get-FileHash -LiteralPath $releaseZip -Algorithm SHA256).Hash
+Set-Content -LiteralPath $checksumFile -Value "$releaseHash  MorningCall-B42.21.zip" -Encoding ascii
 
 Write-Host "Repository Workshop package: $repoItem"
 Write-Host "Game uploader package:       $userItem"
 Write-Host "Manual distribution ZIP:     $releaseZip"
+Write-Host "Release checksum:            $checksumFile"
