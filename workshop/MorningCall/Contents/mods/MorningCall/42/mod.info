@@ -1,0 +1,7 @@
+id=MorningCall
+name=Morning Call
+poster=poster.png
+description=A small multiplayer sleep helper. Shows who is sleeping, then wakes everyone with a rooster call at 05:30.
+modversion=1.0.1
+pzversion=42.21.0
+versionMin=42.21.0

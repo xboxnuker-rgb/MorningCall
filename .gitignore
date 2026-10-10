@@ -1,0 +1,15 @@
+# Generated release archives
+release/*.zip
+
+# Local test and diagnostic output
+console.txt
+coop-console.txt
+*.log
+*.tmp
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+

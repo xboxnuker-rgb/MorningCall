@@ -1,0 +1,18 @@
+[h1]Morning Call[/h1]
+
+A lightweight multiplayer sleep helper for Project Zomboid Build 42.21.
+
+[b]Features[/b]
+[list]
+[*]Shows who is currently sleeping, for example: [code]Sleeping 1/3: Alice[/code]
+[*]Wakes sleeping online players at 05:30 every in-game day
+[*]Plays a rooster crow and displays a six-second morning message
+[*]Leaves fatigue, sleep duration, and time acceleration to the vanilla game
+[*]Designed to coexist with MP Fast Forward
+[/list]
+
+No sandbox options, keybinds, dependencies, or saved data.
+
+[b]Workshop ID:[/b] assigned on first upload
+[b]Mod ID:[/b] MorningCall
+

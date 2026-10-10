@@ -1,0 +1,14 @@
+MORNING CALL 1.0.1
+
+WORKSHOP INSTALL
+1. Subscribe to Morning Call and restart Project Zomboid.
+2. The server owner adds the numeric Steam item ID to WorkshopItems=.
+3. Keep MorningCall in Mods=.
+
+MANUAL INSTALL
+1. Extract the MorningCall folder into C:\Users\<your-name>\Zomboid\mods\.
+2. Add MorningCall to the server's Mods= list.
+3. Do not add a WorkshopItems= entry when using only the manual copy.
+
+All players and the server must use the same version. Stop the server before
+changing installed files. Full documentation is in the repository README.md.

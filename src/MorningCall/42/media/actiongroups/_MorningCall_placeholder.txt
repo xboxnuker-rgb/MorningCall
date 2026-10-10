@@ -1,0 +1,2 @@
+Morning Call does not add action groups. This file keeps the Build 42 mod scanner quiet.
+
