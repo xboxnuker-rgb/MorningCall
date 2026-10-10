@@ -1,6 +1,8 @@
 [center][size=6][b]Morning Call[/b][/size]
 A small multiplayer sleep helper for Project Zomboid Build 42.21[/center]
 
+Originally built for a three-player co-op server, with no hard-coded player limit.
+
 [b]What it does[/b]
 
 [list]
@@ -9,6 +11,7 @@ A small multiplayer sleep helper for Project Zomboid Build 42.21[/center]
 [*]Wakes sleeping online players at 05:30 each in-game day
 [*]Displays a six-second morning notification for everyone
 [*]Plays a rooster-crow alert on each connected client
+[*]Runs the morning alert daily even when nobody is asleep
 [*]Leaves fatigue, sleep duration, and time acceleration to the vanilla game
 [*]Is designed to coexist with MP Fast Forward
 [/list]
@@ -60,4 +63,3 @@ The mod was developed with substantial assistance from OpenAI Codex. The promoti
 
 Mod ID: [code]MorningCall[/code]
 Version: [code]1.0.1[/code]
-

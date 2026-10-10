@@ -1,6 +1,6 @@
 # Morning Call
 
-Morning Call is a deliberately small multiplayer sleep helper for Project Zomboid Build 42.21. It was built for a three-player co-op server and stays out of the game's time-speed logic.
+Morning Call is a deliberately small multiplayer sleep helper for Project Zomboid Build 42.21. It was built for a three-player co-op server, works with any connected-player count, and stays out of the game's time-speed logic.
 
 ![Morning Call preview](workshop/MorningCall/preview.png)
 
@@ -25,6 +25,7 @@ No save reset is required. Stop the server before replacing an installed version
 - At 05:30 game time every day, wakes any sleeping online players through the vanilla wake-up object change.
 - Sends every connected player a six-second message: `Cock-a-doodle-doo! It's 05:30 - morning has arrived.`
 - Plays one local rooster crow for each connected client.
+- Runs the daily morning alert even if nobody is asleep; only the wake-up step is skipped.
 - Re-centres the banner automatically when the resolution changes.
 - Does not alter fatigue, sleep duration, player stats, or the game-speed multiplier.
 
@@ -184,7 +185,8 @@ MorningCall/
 |   `-- MorningCall-preview-source.png
 |-- distribution/
 |   |-- GITHUB_RELEASE_v1.0.1.md
-|   `-- NEXUS_DESCRIPTION.txt
+|   |-- NEXUS_DESCRIPTION.txt
+|   `-- NEXUS_UPLOAD_CHECKLIST.md
 |-- release/
 |   |-- MorningCall-B42.21.zip
 |   `-- SHA256SUMS.txt
@@ -204,6 +206,10 @@ The build script copies the canonical source into:
 - `release/SHA256SUMS.txt` for download verification.
 
 It does not edit the live server INI and does not upload anything to Steam.
+
+## Privacy and security
+
+Morning Call contains Lua, text metadata, one PNG, and one OGG sound. It contains no executable binaries, installers, analytics, telemetry, advertisements, account integration, or external network requests. Its only network traffic uses Project Zomboid's normal client/server mod-command channel for sleeping state and the morning alert.
 
 ## Runtime design
 
