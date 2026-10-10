@@ -243,14 +243,14 @@ Test with the server stopped before changing installed files.
 - [ ] Disconnecting, dying, entering ghost mode, and reconnecting update the denominator correctly.
 - [ ] Crossing 05:30 at normal speed wakes sleepers once.
 - [ ] Crossing 05:30 under accelerated sleep still triggers once.
-- [ ] Every client hears one rooster crow and sees one six-second message.
+- [x] Every client hears one rooster crow and sees one six-second message.
 - [ ] Starting the server before 05:30 schedules that morning.
 - [ ] Starting the server after 05:30 schedules the following morning without a replay.
 - [ ] MP Fast Forward still returns the game to normal speed after waking.
 - [ ] `console.txt` contains no Morning Call Lua, sound, or networking errors.
 - [ ] A client with the manual copy removed can download and run only the Workshop version.
 
-Current release status: the banner, state synchronization, 05:30 wake-up, and morning message were exercised in private multiplayer play. Version 1.0.1 includes a revised local-emitter sound call; verify the rooster once more before marking a public Nexus release as fully tested.
+Current release status: the banner, state synchronization, 05:30 wake-up, morning message, and revised local-emitter rooster sound were exercised successfully in private multiplayer play.
 
 Useful log file:
 

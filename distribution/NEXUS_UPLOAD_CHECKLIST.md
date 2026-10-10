@@ -54,10 +54,10 @@ No open-source licence is currently attached to the code. Choose the Nexus permi
 - [x] CC0 rooster source is credited.
 - [x] AI disclosures are written into the page draft.
 - [x] SHA-256 checksum generated.
-- [ ] Re-test the rooster alert at 05:30 using version 1.0.1.
+- [x] Re-test the rooster alert at 05:30 using version 1.0.1.
 - [ ] Decide the source-code and redistribution licence/permissions.
 - [ ] Create the public GitHub repository and release.
-- [ ] Replace any candidate-status wording after the audio check passes.
+- [x] Replace any candidate-status wording after the audio check passes.
 - [ ] Publish the Nexus page and record its mod ID/URL.
 - [ ] Add the live Nexus URL to the GSVS Projects Hub.
 

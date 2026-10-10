@@ -33,6 +33,6 @@ SHA-256:
 
 ## Status
 
-The multiplayer banner, state synchronization, scheduled waking, and morning message have been exercised in private multiplayer play. Version 1.0.1 revises rooster playback to use the local player's sound emitter; complete one final audio check before promoting this from a candidate build to a fully tested public release.
+The multiplayer banner, state synchronization, scheduled waking, morning message, and revised local-emitter rooster playback have been exercised successfully in private multiplayer play.
 
 See `README.md` for server configuration, architecture, testing, and troubleshooting.
