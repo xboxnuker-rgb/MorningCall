@@ -89,16 +89,20 @@ This is the recommended installation method for GOG players. A manually distribu
 
 | Channel | GOG compatible | Updates | Best use |
 | --- | --- | --- | --- |
-| GitHub Releases | Yes | Manual download | Canonical project home and a small private group |
+| [GitHub Releases](https://github.com/xboxnuker-rgb/MorningCall/releases/tag/v1.0.1-b42.21) | Yes | Manual download | Canonical project home and public release archive |
 | Steam Workshop | Steam clients | Automatic subscription updates | Largest PZ audience and Steam-hosted servers |
-| Nexus Mods | Yes, primarily manual installation | Nexus/Vortex update notifications | Public non-Steam mirror |
+| [Nexus Mods](https://www.nexusmods.com/projectzomboid/mods/444) | Yes, primarily manual installation | Nexus update notifications | Public non-Steam mirror |
 | ModDB | Yes, manual installation | Manual download | Optional secondary public mirror |
 
 ### GitHub Releases
 
-GitHub Releases is the best primary home for this project because it keeps the source, README, version history, release notes, ZIP, and checksum together without requiring Project Zomboid to be owned on Steam.
+GitHub Releases is the primary home for this project because it keeps the source, README, version history, release notes, ZIP, and checksum together without requiring Project Zomboid to be owned on Steam.
 
-Recommended release details:
+- [Source repository](https://github.com/xboxnuker-rgb/MorningCall)
+- [Version 1.0.1 release](https://github.com/xboxnuker-rgb/MorningCall/releases/tag/v1.0.1-b42.21)
+- [Direct ZIP download](https://github.com/xboxnuker-rgb/MorningCall/releases/download/v1.0.1-b42.21/MorningCall-B42.21.zip)
+
+Published release details:
 
 - Tag: `v1.0.1-b42.21`
 - Title: `Morning Call 1.0.1 for Project Zomboid Build 42.21`
@@ -107,19 +111,9 @@ Recommended release details:
 
 ### Nexus Mods
 
-Project Zomboid has an active Nexus Mods section, although the PZ community is much larger on Steam Workshop. Upload the same `MorningCall-B42.21.zip` as a **Main File** in the Project Zomboid game section and use `distribution/NEXUS_DESCRIPTION.txt` as the page description.
+Morning Call is also available from [Nexus Mods](https://www.nexusmods.com/projectzomboid/mods/444). The Nexus page carries the same `MorningCall-B42.21.zip` package as the GitHub release and includes the same manual installation instructions.
 
-Suggested listing details:
-
-- Category: `Gameplay` or `Miscellaneous`
-- Version: `1.0.1`
-- Game version: Build `42.21.x`
-- Required files: None
-- Installation: Manual installation instructions from this README
-- Relevant labels: multiplayer, interface, quality of life, Build 42
-- AI disclosure tags: `AI-Generated Content` and `AI Media`
-
-Nexus requires hosted files to be intended for public sharing, so it should not be used merely as private storage for a few friends. The promotional thumbnail was generated with an AI image tool and the mod was developed with substantial AI coding assistance; both must be disclosed accurately on the Nexus listing. Nexus currently lists Project Zomboid in Vortex's supported games, but Morning Call's Vortex installation has not been verified, so manual installation remains the documented path.
+The Nexus listing is tagged for user interface, quality of life, AI-generated content, and AI media. Manual installation remains the supported path because Vortex installation has not been verified for this package.
 
 ### ModDB
 

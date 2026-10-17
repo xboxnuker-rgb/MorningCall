@@ -1,6 +1,8 @@
 # Nexus Mods publishing checklist
 
-This document contains the page settings and assets for publishing Morning Call in the Project Zomboid section of Nexus Mods. It is a preparation checklist only; it does not publish anything.
+This document records the settings and assets used for the public Morning Call page in the Project Zomboid section of Nexus Mods.
+
+Live page: https://www.nexusmods.com/projectzomboid/mods/444
 
 ## Page details
 
@@ -42,9 +44,9 @@ The final two disclosures are required for an accurate listing: the implementati
 7. Confirm that the archive preview shows `MorningCall/42/mod.info` at the correct depth.
 8. Wait for the file's security scan to complete before sharing the page.
 
-## Permissions requiring the maintainer's decision
+## Permissions
 
-No open-source licence is currently attached to the code. Choose the Nexus permissions deliberately rather than accepting assumptions about redistribution, modification, conversion, or use in other mods. The bundled rooster audio is CC0, but that does not automatically license the Lua code or generated artwork under CC0.
+No open-source licence is currently attached to the code. The Nexus page therefore does not allow redistribution, conversion, monetisation, or Donation Points. Modification and asset reuse require permission from the maintainer. The bundled rooster audio remains CC0, but that does not automatically license the Lua code or generated artwork under CC0.
 
 ## Pre-publication gate
 
@@ -55,10 +57,10 @@ No open-source licence is currently attached to the code. Choose the Nexus permi
 - [x] AI disclosures are written into the page draft.
 - [x] SHA-256 checksum generated.
 - [x] Re-test the rooster alert at 05:30 using version 1.0.1.
-- [ ] Decide the source-code and redistribution licence/permissions.
-- [ ] Create the public GitHub repository and release.
+- [x] Decide the source-code and redistribution licence/permissions.
+- [x] Create the public GitHub repository and release.
 - [x] Replace any candidate-status wording after the audio check passes.
-- [ ] Publish the Nexus page and record its mod ID/URL.
-- [ ] Add the live Nexus URL to the GSVS Projects Hub.
+- [x] Publish the Nexus page and record its mod ID/URL.
+- [x] Add the live Nexus URL to the GSVS Projects Hub.
 
 Nexus Mods requires uploaded files to be intended for public sharing. Do not use the published page as private storage.

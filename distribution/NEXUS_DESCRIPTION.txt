@@ -24,7 +24,7 @@ Originally built for a three-player co-op server, with no hard-coded player limi
 [*]No other mods or frameworks are required
 [/list]
 
-[b]Manual installation — Steam or GOG[/b]
+[b]Manual installation: Steam or GOG[/b]
 
 [list=1]
 [*]Download and extract [code]MorningCall-B42.21.zip[/code].
@@ -51,6 +51,14 @@ Add [code]MorningCall[/code] to the server's [code]Mods=[/code] list. When insta
 
 The banner, state synchronization, scheduled waking, morning message, and revised local-emitter rooster playback have been exercised successfully in private multiplayer play.
 
+[b]Project links[/b]
+
+[list]
+[*]Source and documentation: https://github.com/xboxnuker-rgb/MorningCall
+[*]GitHub release: https://github.com/xboxnuker-rgb/MorningCall/releases/tag/v1.0.1-b42.21
+[*]Direct ZIP mirror: https://github.com/xboxnuker-rgb/MorningCall/releases/download/v1.0.1-b42.21/MorningCall-B42.21.zip
+[/list]
+
 [b]Credits[/b]
 
 Rooster Crow 02 from SFXMint's animal-call set.
@@ -59,7 +67,7 @@ License: CC0 1.0 Universal
 
 [b]AI disclosure[/b]
 
-The mod was developed with substantial assistance from OpenAI Codex. The promotional thumbnail was generated using OpenAI image generation. Apply the Nexus [b]AI-Generated Content[/b] and [b]AI Media[/b] tags to this listing.
+The mod was developed with substantial assistance from OpenAI Codex. The promotional thumbnail was generated using OpenAI image generation. This listing is tagged [b]AI-Generated Content[/b] and [b]AI Media[/b].
 
 Mod ID: [code]MorningCall[/code]
 Version: [code]1.0.1[/code]

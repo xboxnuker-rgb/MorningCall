@@ -1,4 +1,4 @@
-# Morning Call 1.0.1 — Project Zomboid Build 42.21
+# Morning Call 1.0.1 - Project Zomboid Build 42.21
 
 Morning Call is a lightweight multiplayer sleep helper. It shows which players are sleeping and gives the group a consistent 05:30 morning wake-up without changing fatigue or controlling time acceleration.
 
@@ -34,5 +34,10 @@ SHA-256:
 ## Status
 
 The multiplayer banner, state synchronization, scheduled waking, morning message, and revised local-emitter rooster playback have been exercised successfully in private multiplayer play.
+
+## Project links
+
+- [Source and documentation](https://github.com/xboxnuker-rgb/MorningCall)
+- [Nexus Mods mirror](https://www.nexusmods.com/projectzomboid/mods/444)
 
 See `README.md` for server configuration, architecture, testing, and troubleshooting.
