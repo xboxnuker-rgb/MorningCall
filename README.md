@@ -1,3 +1,9 @@
+<!-- GSVS-REPOSITORY-MIGRATION -->
+> **New repository home:** This project moved from `xboxnuker-rgb/MorningCall` to
+> [GSVS-UK-ACM/MorningCall](https://github.com/GSVS-UK-ACM/MorningCall).
+> Existing GitHub links redirect here. Continue using this repository under its
+> organisation address. Existing local checkouts can keep their folders.
+
 # Morning Call
 
 Morning Call is a deliberately small multiplayer sleep helper for Project Zomboid Build 42.21. It was built for a three-player co-op server, works with any connected-player count, and stays out of the game's time-speed logic.
@@ -89,7 +95,7 @@ This is the recommended installation method for GOG players. A manually distribu
 
 | Channel | GOG compatible | Updates | Best use |
 | --- | --- | --- | --- |
-| [GitHub Releases](https://github.com/xboxnuker-rgb/MorningCall/releases/tag/v1.0.1-b42.21) | Yes | Manual download | Canonical project home and public release archive |
+| [GitHub Releases](https://github.com/GSVS-UK-ACM/MorningCall/releases/tag/v1.0.1-b42.21) | Yes | Manual download | Canonical project home and public release archive |
 | Steam Workshop | Steam clients | Automatic subscription updates | Largest PZ audience and Steam-hosted servers |
 | [Nexus Mods](https://www.nexusmods.com/projectzomboid/mods/444) | Yes, primarily manual installation | Nexus update notifications | Public non-Steam mirror |
 | ModDB | Yes, manual installation | Manual download | Optional secondary public mirror |
@@ -98,9 +104,9 @@ This is the recommended installation method for GOG players. A manually distribu
 
 GitHub Releases is the primary home for this project because it keeps the source, README, version history, release notes, ZIP, and checksum together without requiring Project Zomboid to be owned on Steam.
 
-- [Source repository](https://github.com/xboxnuker-rgb/MorningCall)
-- [Version 1.0.1 release](https://github.com/xboxnuker-rgb/MorningCall/releases/tag/v1.0.1-b42.21)
-- [Direct ZIP download](https://github.com/xboxnuker-rgb/MorningCall/releases/download/v1.0.1-b42.21/MorningCall-B42.21.zip)
+- [Source repository](https://github.com/GSVS-UK-ACM/MorningCall)
+- [Version 1.0.1 release](https://github.com/GSVS-UK-ACM/MorningCall/releases/tag/v1.0.1-b42.21)
+- [Direct ZIP download](https://github.com/GSVS-UK-ACM/MorningCall/releases/download/v1.0.1-b42.21/MorningCall-B42.21.zip)
 
 Published release details:
 
